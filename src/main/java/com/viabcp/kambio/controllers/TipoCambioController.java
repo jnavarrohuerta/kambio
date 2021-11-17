@@ -34,4 +34,9 @@ public class TipoCambioController {
         return tipoCambioService.getTipoCambio(tipoCambio);
     }
 
+    @RequestMapping(value = "/api/tipocambio/agregar", method = RequestMethod.POST)
+    public @ResponseBody TipoCambio agregarTipoCambio(@RequestBody TipoCambio tipoCambio){
+        return tipoCambioService.agregar(tipoCambio);
+    }
+
 }

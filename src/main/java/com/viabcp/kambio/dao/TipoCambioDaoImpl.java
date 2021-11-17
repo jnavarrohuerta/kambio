@@ -39,4 +39,9 @@ public class TipoCambioDaoImpl implements TipoCambioDao{
         TipoCambioPK tipoCambioPK = new TipoCambioPK(tipoCambio.getIdMoneda1(), tipoCambio.getIdMoneda2());
         return entityManager.find(TipoCambio.class, tipoCambioPK);
     }
+
+    @Override
+    public TipoCambio agregar(TipoCambio tipoCambio) {
+        return entityManager.merge(tipoCambio);
+    }
 }

@@ -37,4 +37,9 @@ public class TipoCambioServiceImpl implements TipoCambioService{
     public TipoCambio getTipoCambio(TipoCambio tipoCambio) {
         return tipoCambioDao.get(tipoCambio);
     }
+
+    @Override
+    public TipoCambio agregar(TipoCambio tipoCambio) {
+        return tipoCambioDao.agregar(tipoCambio);
+    }
 }

@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface MonedaDao {
     List<Moneda> getMonedas();
+
+    Moneda agregar(Moneda moneda);
 }

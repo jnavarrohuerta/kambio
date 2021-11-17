@@ -9,4 +9,6 @@ public interface TipoCambioService {
     TipoCambio actualizar(TipoCambio tipoCambio);
 
     TipoCambio getTipoCambio(TipoCambio tipoCambio);
+
+    TipoCambio agregar(TipoCambio tipoCambio);
 }

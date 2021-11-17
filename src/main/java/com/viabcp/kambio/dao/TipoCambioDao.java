@@ -8,4 +8,6 @@ public interface TipoCambioDao {
     TipoCambio actualizar(TipoCambio tipoCambio);
 
     TipoCambio get(TipoCambio tipoCambio);
+
+    TipoCambio agregar(TipoCambio tipoCambio);
 }

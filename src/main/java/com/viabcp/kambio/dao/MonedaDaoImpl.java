@@ -21,4 +21,9 @@ public class MonedaDaoImpl implements MonedaDao{
         List<Moneda> monedas = entityManager.createQuery(query).getResultList();
         return monedas;
     }
+
+    @Override
+    public Moneda agregar(Moneda moneda) {
+        return entityManager.merge(moneda);
+    }
 }
