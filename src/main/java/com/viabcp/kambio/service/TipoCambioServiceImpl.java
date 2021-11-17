@@ -27,4 +27,14 @@ public class TipoCambioServiceImpl implements TipoCambioService{
         operacion.setMontoCambio(montoCambio);
         return operacion;
     }
+
+    @Override
+    public TipoCambio actualizar(TipoCambio tipoCambio) {
+        return tipoCambioDao.actualizar(tipoCambio);
+    }
+
+    @Override
+    public TipoCambio getTipoCambio(TipoCambio tipoCambio) {
+        return tipoCambioDao.get(tipoCambio);
+    }
 }
